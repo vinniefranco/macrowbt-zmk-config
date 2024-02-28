@@ -1,0 +1,56 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+#define BT_LAYER 1
+
+/ {
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+        };
+
+        select_all: select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
+            label = "SELECT_ALL";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&none        &mo 1     &mo 1       &none
+&select_all  &copy     &paste      &kp M
+&kp C_PREV   &kp C_PP  &kp C_NEXT  &kp M
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+        };
+
+        sim_layer {
+            bindings = <
+&none         &none         &none         &none
+&bt BT_CLR    &sys_reset    &bootloader   &out OUT_TOG
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+            >;
+        };
+    };
+};

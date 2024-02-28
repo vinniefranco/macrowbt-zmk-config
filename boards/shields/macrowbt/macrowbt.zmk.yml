@@ -1,0 +1,14 @@
+file_format: "1"
+id: macrowbt
+name: MacrowPAD
+type: shield
+url: https://github.com/vinniefranco
+description: Bluetooth wireless numpad
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+  - encoder
+outputs:
+  - usb
+  - ble

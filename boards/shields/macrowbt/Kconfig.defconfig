@@ -1,0 +1,6 @@
+if SHIELD_MACROWBT
+
+config ZMK_KEYBOARD_NAME
+  default "MacrowPAD"
+
+endif

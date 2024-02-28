@@ -19,6 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: a_dux_left
-  - board: seeeduino_xiao_ble
-    shield: a_dux_right
+    shield: macrowbt rgbled_adapter
