@@ -1,4 +1,5 @@
 # Hey there!
+![main](https://github.com/vinniefranco/macrowbt-zmk-config/assets/328428/95a09354-55e5-4ed4-95a1-ca011cca714e)
 
 You were gifted a macro pad! 
 
@@ -64,5 +65,4 @@ This may seem tedious - but, I promise it's easy.
 
 The pad will then dismount, reboot, and boom. You are rocking your latest layout.
 
-
-You can use it as is (with an admittedly basic keymap: https://github.com/vinniefranco/macrowbt-zmk-config/blob/main/config/macrowbt.keymap)
+![image (1)](https://github.com/vinniefranco/macrowbt-zmk-config/assets/328428/8eff7218-0998-487e-a21e-66a234d54784)
