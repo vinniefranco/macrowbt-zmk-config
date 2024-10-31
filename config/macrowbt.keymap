@@ -22,9 +22,9 @@
 
         default_layer {
             bindings = <
-&none        &mo 1      &mo 1            &none
-&none        &kp KP_N2  &kp KP_NUMBER_3  &kp KP_NUMBER_4
-&cad_rotate  &kp HOME   &kp KP_N0        &kp KP_N1
+&none        &mo 1     &mo 1   &none
+&none        &kp N2    &kp N3  &kp N4
+&cad_rotate  &kp HOME  &kp N0  &kp N1
             >;
 
             sensor-bindings =
